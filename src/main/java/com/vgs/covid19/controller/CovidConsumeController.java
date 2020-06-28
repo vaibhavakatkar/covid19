@@ -29,7 +29,7 @@ public class CovidConsumeController {
 		try {
 			object = webServiceClient.getResponse(environment.getRequiredProperty("service.url.states"), HttpMethod.GET);
 		} catch (Exception e) {
-			System.out.println("Exception in getStatesSummary of CovidConsumeServices:-" + e.getMessage());
+			System.out.println("Exception in getStatesSummary of CovidConsumeController:-" + e.getMessage());
 		}
 		return object;
 	}
